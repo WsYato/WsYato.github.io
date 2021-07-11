@@ -1,21 +1,10 @@
 const body = document.getElementById("body");
-const montageVideo = document.getElementById("montagevideo");
-
 const gotoTop = document.getElementById("totop");
-var gotoTopEnabled = false;
-
-const openContact = document.getElementById("opencontact");
-const closeContact = document.getElementById("closecontact");
+const toggleContact = document.getElementById("togglecontact");
 const contactMe = document.getElementById("contactme");
+
+var gotoTopEnabled = false;
 var contactOpen = false;
-
-window.onload = function()
-{
-    const categories = document.getElementsByClassName("category");
-
-    for (let i = 0; i < categories.length; i++)
-        categories[i].style.transform = `rotate(${Math.floor(Math.random() * (3 + 3 + 1)) - 3}deg)`;
-}
 
 window.onscroll = function()
 {
@@ -23,15 +12,11 @@ window.onscroll = function()
     {
         gotoTop.style.display = "none";
         gotoTopEnabled = false;
-        
-        montageVideo.play();
     }
     else if (!gotoTopEnabled && window.scrollY > 0)
     {
         gotoTop.style.display = "inline-block";
         gotoTopEnabled = true;
-        
-        montageVideo.pause();
     }
 }
 
@@ -41,22 +26,16 @@ gotoTop.onclick = function()
     document.documentElement.scrollTop = 0;
 }
 
-openContact.onclick = function()
+toggleContact.onclick = function()
 {
     if (contactOpen)
     {
-        contactMe.style.width = "0";
+        contactMe.style.right = "-17.5em";
         contactOpen = false;
 
         return;
     }
 
-    contactMe.style.width = "20%";
+    contactMe.style.right = "0";
     contactOpen = true;
-}
-
-closeContact.onclick = function()
-{
-    contactMe.style.width = "0";
-    contactOpen = false;
 }

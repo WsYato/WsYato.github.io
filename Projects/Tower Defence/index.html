@@ -1,92 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/Projects/style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <title>Tower Defence</title>
 </head>
+
 <body>
 
-    <a href="/index.html">Return</a>
-    
-    <div id="images">
-
-        <p>ss1.jpg</p>
-        <p>ss2.jpg</p>
-        <p>ss3.jpg</p>
-        <p>ss4.jpg</p>
-        <p>ss5.jpg</p>
-        <p>ss6.jpg</p>
-        <p>ss7.jpg</p>
-
-    </div>
+    <a href="/Main/index.html" id="return">Return</a>
 
     <div id="container">
 
-        <div id="main">
+        <div id="show">
 
-            <h1 id="title">Tower Defence</h1>
-        
-            <hr>
+            <h1>Tower Defence</h1>
 
-            <span class="gap"></span>
+            <hr><span class="gap"></span>
 
-            <div class="categories">
-                        
-                <div class="category cs"><p>C#</p></div>
-                <div class="category unity"><p>Unity</p></div>
-            
-            </div>
-        
             <div id="gallery">
-            
-                <img src="">
 
-                <span>
-                
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
-                
-                </span>
-            
+                <button id="prev">&#10094;</button>
+
+                <img src="ss1.jpg" alt="" class="source">
+                <img src="ss2.jpg" alt="" class="source">
+                <img src="ss3.jpg" alt="" class="source">
+                <img src="ss4.jpg" alt="" class="source">
+                <img src="ss5.jpg" alt="" class="source">
+                <img src="ss6.jpg" alt="" class="source">
+                <img src="ss7.jpg" alt="" class="source">
+                <video src="vid1.mp4" controls class="source"></video>
+
+                <button id="next">&#10095;</button>
+
             </div>
 
-            <span class="gap"></span>
+            <p id="currentsource"></p>
 
-            <div id="info">
+        </div>
+
+        <div id="info">
+
+            <h1>Info</h1>
+
+            <hr><span class="gap"></span>
+
+            <div id="infocontainer">
+
+                <div class="categories">
+
+                    <div class="category cs">
+                        <p>C#</p>
+                    </div>
+                    <div class="category unity">
+                        <p>Unity</p>
+                    </div>
+
+                </div>
 
                 <div id="generalinfo">
 
                     <span class="general">Duration:</span><span>~2 months</span><br>
                     <span class="general">Status:</span><span>Complete</span><br>
 
-                    <br><br>
-                    
                 </div>
 
-                <div>
+                <div id="maininfo">
 
-                    This is a tower defence game. The enemies make use of A* pathfinding algorithm. You can place nodes where ever you want before the game starts.
-                    The is an option for placing of deleting multiple nodes at once. The goal is to get the highest score you can achieve via strategically placing
+                    This is a tower defence game. The enemies make use of A* pathfinding algorithm. You can place nodes
+                    where ever you want before the game starts.
+                    The is an option for placing of deleting multiple nodes at once. The goal is to get the highest
+                    score you can achieve via strategically placing
                     the nodes and turrets.
 
                     <br><br><br>
 
-                    This game was my first ever game. It was the first project in my first year of school. I had almost 5 months to create a tower defence game.
-                    I spent 3 months just learning the basicis of programming and gamedeveloping, because I had no prior experience.
-                    After I had an idea of how things work, I started working on the actual project. In the begenning everything went smoothly and without problems.
-                    But I came across a big problem which was pathfinding. I didn't want to use unity's built-in pathfinding system because it smoothed the path,
-                    and that wasn't what I was going for. So I started searching for alternatives and came across an intresting solution which was pathfinding via the
-                    A* algorithm. I quickly began researching and programmed it. That is what I'm most proud of about this game.
+                    This game was my first ever game. It was the first project in my first year of school. I had almost
+                    5 months to create a tower defence game.
+                    I spent 3 months just learning the basicis of programming and gamedeveloping, because I had no prior
+                    experience.
+                    After I had an idea of how things work, I started working on the actual project. In the begenning
+                    everything went smoothly and without problems.
+                    But I came across a big problem which was pathfinding. I didn't want to use unity's built-in
+                    pathfinding system because it smoothed the path,
+                    and that wasn't what I was going for. So I started searching for alternatives and came across an
+                    intresting solution which was pathfinding via the
+                    A* algorithm. I quickly began researching and programmed it. That is what I'm most proud of about
+                    this game.
 
                 </div>
 
-                <br>
-                
             </div>
 
         </div>

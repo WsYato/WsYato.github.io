@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/Projects/style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <title>Beat 'Em Up</title>
 </head>
+
 <body>
 
-    <a href="/index.html">Return</a>
-    
-    <div id="images">
-
-        <p>ss1.jpg</p>
-        <p>ss2.jpg</p>
-        <p>ss3.jpg</p>
-
-    </div>
+    <a href="/Main/index.html" id="return">Return</a>
 
     <div id="container">
 
-        <div id="main">
+        <div id="show">
 
-            <h1 id="title">Beat 'Em Up</h1>
-        
-            <hr>
+            <h1>Beat 'Em Up</h1>
 
-            <span class="gap"></span>
+            <hr><span class="gap"></span>
 
-            <div class="categories">
-                        
-                <div class="category cs"><p>C#</p></div>
-                <div class="category unity"><p>Unity</p></div>
-            
-            </div>
-        
             <div id="gallery">
-            
-                <img src="">
 
-                <span>
-                
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
-                
-                </span>
-            
+                <button id="prev">&#10094;</button>
+
+                <img src="ss1.jpg" alt="" class="source">
+                <img src="ss2.jpg" alt="" class="source">
+                <img src="ss3.jpg" alt="" class="source">
+                <video src="vid1.mp4" controls class="source"></video>
+
+                <button id="next">&#10095;</button>
+
             </div>
 
-            <span class="gap"></span>
+            <p id="currentsource"></p>
 
-            <div id="info">
+        </div>
+
+        <div id="info">
+
+            <h1>Info</h1>
+
+            <hr><span class="gap"></span>
+
+            <div id="infocontainer">
+
+                <div class="categories">
+
+                    <div class="category cs">
+                        <p>C#</p>
+                    </div>
+                    <div class="category unity">
+                        <p>Unity</p>
+                    </div>
+
+                </div>
 
                 <div id="generalinfo">
 
                     <span class="general">Duration:</span><span>~5 months</span><br>
                     <span class="general">Status:</span><span>Complete</span><br>
 
-                    <br><br>
-                    
                 </div>
 
-                <div>
+                <div id="maininfo">
 
                     This is a beat 'em up type game. The goal is to kill enemies, level up and finally kill the boss.
                     The game is made in unity and uses mostly unity built-in APIs.
-                    
+
                     <br><br><br>
 
-                    This game is my first experience working on a game with a team. The art is all made by a group of artists and the game logic is
-                    made by me and a classmate. In this project I had already gained a lot of experience and knowledge which I made use of in this project.
-                    Mostly all the code used in this project is code that I am proud of and code that I would still write today. What I learned from this project
-                    was mostly unity stuff but the most important thing was teamwork. It was the first time we pushed our code and backed it up online, so naturally
-                    we had a lot of problems. But it was all very valuable experience and this project is one I'm certainly proud of.
+                    This game is my first experience working on a game with a team. The art is all made by a group of
+                    artists and the game logic is
+                    made by me and a classmate. In this project I had already gained a lot of experience and knowledge
+                    which I made use of in this project.
+                    Mostly all the code used in this project is code that I am proud of and code that I would still
+                    write today. What I learned from this project
+                    was mostly unity stuff but the most important thing was teamwork. It was the first time we pushed
+                    our code and backed it up online, so naturally
+                    we had a lot of problems. But it was all very valuable experience and this project is one I'm
+                    certainly proud of.
 
                 </div>
 
-                <br>
-                
             </div>
 
         </div>

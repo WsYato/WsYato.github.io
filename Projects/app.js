@@ -1,5 +1,5 @@
-const images = document.getElementById("images").children;
-const image = document.querySelector("img");
+const sources = document.getElementsByClassName("source");
+const currentSource = document.getElementById("currentsource");
 
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
@@ -8,33 +8,40 @@ var currentSourceCount = 0;
 
 window.onload = function()
 {
-    image.src = `${images[currentSourceCount].textContent}`;
+    Enable();
 }
 
 next.onclick = function()
 {
-    if (currentSourceCount < images.length - 1)
-    {
+    Disable();
+
+    if (currentSourceCount < sources.length - 1)
         currentSourceCount++;
-        image.src = `${images[currentSourceCount].textContent}`;
-    }
     else
-    {
         currentSourceCount = 0;
-        image.src = `${images[currentSourceCount].textContent}`;
-    }
+
+    Enable();
 }
 
 prev.onclick = function()
 {
+    Disable();
+
     if (currentSourceCount > 0)
-    {
         currentSourceCount--;
-        image.src = `${images[currentSourceCount].textContent}`;
-    }
     else
-    {
-        currentSourceCount = images.length - 1;
-        image.src = `${images[currentSourceCount].textContent}`;
-    }
+        currentSourceCount = sources.length - 1;
+
+    Enable();
+}
+
+function Disable()
+{
+    sources[currentSourceCount].style.display = "none";
+}
+
+function Enable()
+{
+    sources[currentSourceCount].style.display = "block";
+    currentSource.innerHTML = `${currentSourceCount + 1}/${sources.length}`;
 }
